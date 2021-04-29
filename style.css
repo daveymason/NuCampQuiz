@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+html, body {
+  height: 100% !important;
+}
+
+button > #submit,
+footer,
+h1,h5{
+  font-family: "Lobster", cursive;
+}
+
+.jumbotron{
+  margin:0;
+  padding: 20px;
+  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+  color: white;
+}
+
+/* .container-fluid  */
+body{
+  /* background-color: #b8c6db; */
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+  font-family: 'Poppins', sans-serif;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* overflow: hidden; */
+  margin: 0;
+  /* padding: 3%; */
+}
+
+footer{
+  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+  color: white !important; 
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar{
+  background-color: #901CAD;
+  padding: 0;
+}
+
+h2 {
+  padding: 0 0 2rem 0;
+  text-align: center;
+  margin: 0;
+}
+
+.answer{
+  width: 1rem;
+  height: 1rem;
+}
+
+.list-group-item{
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+ul li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+.quiz-header {
+  padding: 3rem 5rem;
+}
+
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  /* width: 100%; */
+  margin-top: 3%;
+  /* overflow: hidden; */
+}
+
+.quiz-container > button {
+  background-color: #901CAD !important;
+  color: #fff !important;
+  border: none !important;
+  display: block !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  font-size: 1.8rem !important;
+  font-family: "Lobster", cursive !important;
+  padding: 1.3rem !important;
+}
+
+.quiz-container > button:hover {
+  background-color: #3046C5 !important;
+}
+
+.quiz-container > button:focus {
+  outline: none;
+  background-color: #5e3370;
+} /*
