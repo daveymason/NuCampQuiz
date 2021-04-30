@@ -1,11 +1,11 @@
 const quizData = [
     {
-        question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
-        correct: "d",
+        question: "What's the correct way to link a Bootstrap CSS file?",
+        a: '<link rel="stylesheet" href="bootstrap link" </>',
+        b: '<link rel="stylesheet" href="bootstrap link" />',
+        c: '<link style="bootstrap" href="bootstrap link" />',
+        d: '<link type="stylesheet" href="bootstrap link">',
+        correct: "b",
     },
     {
         question: "What does CSS stand for?",
