@@ -37,6 +37,31 @@ footer{
   padding: 0;
 }
 
+.navbar a.nav-link{
+  color: white;
+  font-size: 1.3rem;
+}
+
+.navbar a.dropdown-item{
+  font-size: 1.3rem;
+}
+
+.navImg{
+  height: 2.5rem;
+}
+
+.navbar-toggler {
+  background-color: rgba(2, 2, 2, 0.15) !important;
+}
+
+.nav-link{
+  padding-left: 0;
+}
+.navbar-toggler-icon {
+  height: 3rem !important;
+  width: 3rem !important;
+}
+
 h2 {
   padding: 0 0 2rem 0;
   text-align: center;
@@ -56,25 +81,30 @@ h2 {
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
-  padding: 0;
+  padding: 0 0 0 5px;
 }
 
 .list-group-item:hover{
   background-color: #f3f3f3;
 }
+.answer:checked{
+  background-color: blue;
+}
 
 label{
   height: 100%;
-  width: 92%;
-  padding: 3% 0 2% 0;
+  width: 91%;
+  padding: 3% 0;
+  margin: 0;
 }
 .answer{
-  margin-left: 5px !important;
+  
 }
 
 ul li {
   font-size: 1.1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  padding: 0;
 }
 
 ul li label {
