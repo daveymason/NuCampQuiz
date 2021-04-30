@@ -108,7 +108,7 @@ ul li label {
   cursor: pointer;
 }
 .quizContainer{
-  margin: 0;
+  margin: 0 auto;
 }
 .quiz-header {
   padding: 3rem 5rem;
