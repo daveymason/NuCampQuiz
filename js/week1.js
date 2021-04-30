@@ -9,58 +9,58 @@ const quizData = [
     },
     {
         question: "Are tables still considered good practice for website layout?",
-        a: "Yes, they are the best",
-        b: "No, Not anymore",
-        c: "Yes, but only with <h1> tags",
-        d: "No, tables were never used for layout purposes",
+        a: "Yes, they are the best!",
+        b: "No, Not anymore.",
+        c: "Yes, but only with <h1> tags.",
+        d: "No, tables were never used for layout purposes.",
         correct: "b",
     },
     {
         question: "Bootstrap is based mostly on?",
-        a: "React",
-        b: "Java",
-        c: "Php",
-        d: "CSS",
+        a: "React.",
+        b: "Java.",
+        c: "Php.",
+        d: "CSS.",
         correct: "d",
     },
     {
         question: "Which line of code is correct?",
-        a: '<class="col-large>',
-        b: '<div class"container-two>',
+        a: '<class="col-large">',
+        b: '<div class"container-two">',
         c: '<div class="col-12-lg">',
         d: 'div class="col-3-md"',
         correct: "c",
     },
     {
         question: "What does the class 'order-sm-last' do?",
-        a: 'Reverses column direction',
-        b: 'Adds space to the last column',
-        c: 'Reorders the column to appear last',
-        d: 'Force a column to the right by 1',
+        a: 'Reverses column direction.',
+        b: 'Adds space to the last column.',
+        c: 'Reorders the column to appear last.',
+        d: 'Force a column to the right by 1.',
         correct: "c",
     },
     {
         question: "What does the class 'Offset-* Class' do?",
-        a: 'Force a column in a grid to the right',
-        b: 'Adds margin to the left of a column',
-        c: 'Offsets the display from the grid',
-        d: 'Offsets the breakpoint of the grid',
+        a: 'Force a column in a grid to the right.',
+        b: 'Adds margin to the left of a column.',
+        c: 'Offsets the display from the grid.',
+        d: 'Offsets the breakpoint of the grid.',
         correct: "a",
     },
     {
         question: "What is the class 'jumbotron' used for?",
-        a: 'Make a row fullscreen',
-        b: 'Increases size of all elements in a column',
-        c: 'Increases font size',
-        d: 'To call extra attention to a section of the page',
+        a: 'Make a row fullscreen.',
+        b: 'Increases size of all elements in a column.',
+        c: 'Increases font size.',
+        d: 'To call extra attention to a section of the page.',
         correct: "d",
     },
     {
         question: "Which bootstrap class does not align text?",
-        a: 'text-sm-right',
-        b: 'text-lg-left',
-        c: 'text-centre',
-        d: 'text-md-right',
+        a: 'text-sm-right.',
+        b: 'text-lg-left.',
+        c: 'text-centre.',
+        d: 'text-md-right.',
         correct: "c",
     },
     {
@@ -137,8 +137,8 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-                <button onclick="location.reload()">Reload</button>
+            <div class="quiz-header"><h2>You answered ${score}/${quizData.length} questions correctly</h2>
+                <button onclick="location.reload()">Reload</button></div>
             `
         }
     }
