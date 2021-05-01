@@ -1,6 +1,6 @@
 const quizData = [
     {
-        question: "What's the correct way to link a Bootstrap CSS file?",
+        question: "Q1 - What's the correct way to link a Bootstrap CSS file?",
         a: '<link rel="stylesheet" href="bootstrap link" </>',
         b: '<link rel="stylesheet" href="bootstrap link" />',
         c: '<link style="bootstrap" href="bootstrap link" />',
@@ -8,7 +8,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Are tables still considered good practice for website layout?",
+        question: "Q2 - Are tables still considered good practice for website layout?",
         a: "Yes, they are the best!",
         b: "No, Not anymore.",
         c: "Yes, but only with <h1> tags.",
@@ -16,7 +16,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Bootstrap is based mostly on?",
+        question: "Q3 - Bootstrap is based mostly on?",
         a: "React.",
         b: "Java.",
         c: "Php.",
@@ -24,7 +24,7 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "Which line of code is correct?",
+        question: "Q4 - Which line of code is correct?",
         a: '<class="col-large">',
         b: '<div class"container-two">',
         c: '<div class="col-12-lg">',
@@ -32,7 +32,7 @@ const quizData = [
         correct: "c",
     },
     {
-        question: "What does the class 'order-sm-last' do?",
+        question: "Q5 - What does the class 'order-sm-last' do?",
         a: 'Reverses column direction.',
         b: 'Adds space to the last column.',
         c: 'Reorders the column to appear last.',
@@ -40,7 +40,7 @@ const quizData = [
         correct: "c",
     },
     {
-        question: "What does the class 'Offset-* Class' do?",
+        question: "Q6 - What does the class 'Offset-* Class' do?",
         a: 'Force a column in a grid to the right.',
         b: 'Adds margin to the left of a column.',
         c: 'Offsets the display from the grid.',
@@ -48,7 +48,7 @@ const quizData = [
         correct: "a",
     },
     {
-        question: "What is the class 'jumbotron' used for?",
+        question: "Q7 - What is the class 'jumbotron' used for?",
         a: 'Make a row fullscreen.',
         b: 'Increases size of all elements in a column.',
         c: 'Increases font size.',
@@ -56,7 +56,7 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "Which bootstrap class does not align text?",
+        question: "Q8 - Which bootstrap class does not align text?",
         a: 'text-sm-right.',
         b: 'text-lg-left.',
         c: 'text-centre.',
@@ -64,7 +64,7 @@ const quizData = [
         correct: "c",
     },
     {
-        question: "What is the HTML tag for an ordered list?",
+        question: "Q9 - What is the HTML tag for an ordered list?",
         a: '<ul>',
         b: '<ol>',
         c: '<list>',
@@ -72,7 +72,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Select the custom class",
+        question: "Q10 - Select the custom class",
         a: '<btn-block',
         b: '<btn-warning>',
         c: '<btn-exit>',
