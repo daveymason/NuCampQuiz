@@ -73,7 +73,7 @@ const quizData = [
     },
     {
         question: "Q10 - Select the custom class",
-        a: '<btn-block',
+        a: '<btn-block>',
         b: '<btn-warning>',
         c: '<btn-exit>',
         d: '<btn-link>',
