@@ -68,6 +68,17 @@ h2 {
   margin: 0;
 }
 
+.vMenu h5{
+  font-size: 2rem !important;
+}
+
+hr{
+  border : 0;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+  margin: 0;
+}
+
 .answer{
   width: 1rem;
   height: 1rem;
@@ -124,6 +135,21 @@ ul li label {
           transform: scale(0.87);
 }
 
+.btn-primary{
+  background-color: #901CAD;
+  border:solid 1px #901CAD;
+  color: #fff;
+} 
+
+.btn-primary:hover {
+  background-color: #3046C5 !important;
+}
+
+.btn-primary:focus {
+  outline: none;
+  background-color: #5e3370;
+}
+
 .quiz-container > button {
   background-color: #901CAD !important;
   color: #fff !important;
@@ -143,4 +169,4 @@ ul li label {
 .quiz-container > button:focus {
   outline: none;
   background-color: #5e3370;
-} /*
+}
