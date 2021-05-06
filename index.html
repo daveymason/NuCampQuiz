@@ -16,7 +16,7 @@
   <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100"> <!-- For footer at bottom-->
   <header class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row">
@@ -95,11 +95,10 @@
     </div>
   </nav>
 
-  <div class="container-fluid my-5 vMenu">
-    <div class="rounded">
-      <div class="row no-gutters">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav class="nav flex-column bg-white shadow-sm font-italic rounded p-3">
+  <div class="container-fluid vMenu p-xs-0 px-lg-5">
+      <div class="row no-gutters shadow-lg my-5">
+        <div class="col-lg-4 mb-0 tab-container">
+          <nav class="nav flex-column shadow-sm font-italic p-3">
             <a href="#home" role="tab" data-toggle="tab" class="nav-link active mr-2 rounded-pill">
               <img class="navImg mr-2" src="img/logo.png"> Home</a>
         
@@ -117,13 +116,13 @@
           </nav>
         </div>
 
-        <div class="col-lg-8 mb-5 mt-0">
-          <div class="p-5 bg-white shadow-sm">
-            <div class="tab-content">
+        <div class="col-lg-8 p-5 md-5">
+            <div class="tab-content md-5">
               <div role="tabpanel" class="tab-pane fade show active" id="home">
                 <h5 class="lead font-italic m-3">NuCamp Student Quiz</h5>
-                <p class="lead font-italic m-3">Made by students from the NuCamp codecamp feel free to test your
-                  knowledge of each weeks learning materials.</p>
+                <p class="lead font-italic m-3">Made by students from the NuCamp codecamp. 
+                  <br>
+                  Feel free to test your knowledge of each weeks learning materials.</p>
               </div>
               <div role="tabpanel" class="tab-pane fade" id="bootstrap">
                 <h5 class="lead font-italic m-3">Bootstrap Quizzes</h5>
@@ -171,9 +170,7 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
   </div> <!-- Container Fluid-->
 
   <!-- <script src="script.js"></script> -->
@@ -187,7 +184,7 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
 
-  <footer id="sticky-footer" class="py-4">
+  <footer class="py-3 mt-auto">
     <div class="container text-center">
       <small>Developed by <a href="https://daveymason.com">Davey Mason</a></small>
     </div>

@@ -21,15 +21,17 @@ h1,h5{
 body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  min-height: 100vh !important;
 }
 
 footer{
   background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
   color: white !important; 
   font-size: 1.2rem;
-  position: fixed;
-  bottom: 0;
+  position: sticky;
   width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 .navbar{
@@ -135,6 +137,14 @@ ul li label {
           transform: scale(0.87);
 }
 
+.tab-container
+{
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+}
+
+.rounded{
+  border-radius: 20% !important;
+}
 .btn-primary{
   background-color: #901CAD;
   border:solid 1px #901CAD;
