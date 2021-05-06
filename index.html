@@ -1,195 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <title>Nucamp Quiz App</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+  </head>
 
-  <title>Nucamp Quiz App</title>
-  <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
-</head>
-
-<body class="d-flex flex-column min-vh-100"> <!-- For footer at bottom-->
-  <header class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-sm-4 col-md-2 align-self-center">
-          <img src="img/nucampLogo.png" class="img-fluid" />
-        </div>
-        <div class="col">
-          <h1>Knowledge Tests</h1>
-          <h5>By Students for Students</h5>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- For footer at bottom-->
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-4 col-md-2 align-self-center">
+            <img src="img/nucampLogo.png" class="img-fluid" />
+          </div>
+          <div class="col">
+            <h1>Knowledge Tests</h1>
+            <h5>By Students for Students</h5>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="navbar navbar-expand-md navbar-dark flex-column">
-    <div class="container">
-      <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nucampNavbar">
-        <ul class="nav" role="tablist">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false"><img class="navImg" src="img/logo-bootstrap.svg"> Bootstrap</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/quizzes/bootstrap/week1.html">Week 1</a>
-              <hr>
-              <a class="dropdown-item" href="/quizzes/bootstrap/week2.html">Week 2</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/bootstrap/week3.html">Week 3</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/bootstrap/week4.html">Week 4</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" href="#" role="button"
-              aria-haspopup="true" aria-expanded="false"><img class="navImg" src="img/logo-react.svg"> React</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/react/week1.html">Week 1</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/react/week2.html">Week 2</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/react/week3.html">Week 3</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/react/week4.html">Week 4</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" href="#" role="button"
-              aria-haspopup="true" aria-expanded="false"><img class="navImg" src="img/logo-react-native.svg"> Native</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/native/week1.html">Week 1</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/native/week2.html">Week 2</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/native/week3.html">Week 3</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/native/week4.html">Week 4</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" href="#" role="button"
-              aria-haspopup="true" aria-expanded="false"><img class="navImg" src="img/logo-nodejs-square.svg"> Node</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/node/week1.html">Week 1</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/node/week2.html">Week 2</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/node/week3.html">Week 3</a>
-              <hr>
-              <a class="dropdown-item disabled" href="/node/week4.html">Week 4</a>
-            </div>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-dark flex-column">
+      <div class="container">
+        <button
+          class="navbar-toggler m-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nucampNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+          <ul class="nav" role="tablist">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img class="navImg" src="img/logo-bootstrap.svg" />
+                Bootstrap</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/quizzes/bootstrap/week1.html"
+                  >Week 1</a
+                >
+                <hr />
+                <a class="dropdown-item" href="/quizzes/bootstrap/week2.html"
+                  >Week 2</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/bootstrap/week3.html"
+                  >Week 3</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/bootstrap/week4.html"
+                  >Week 4</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle disabled"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img class="navImg" src="img/logo-react.svg" /> React</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/react/week1.html">Week 1</a>
+                <hr />
+                <a class="dropdown-item disabled" href="/react/week2.html"
+                  >Week 2</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/react/week3.html"
+                  >Week 3</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/react/week4.html"
+                  >Week 4</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle disabled"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img class="navImg" src="img/logo-react-native.svg" />
+                Native</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/native/week1.html">Week 1</a>
+                <hr />
+                <a class="dropdown-item disabled" href="/native/week2.html"
+                  >Week 2</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/native/week3.html"
+                  >Week 3</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/native/week4.html"
+                  >Week 4</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle disabled"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img class="navImg" src="img/logo-nodejs-square.svg" /> Node</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/node/week1.html">Week 1</a>
+                <hr />
+                <a class="dropdown-item disabled" href="/node/week2.html"
+                  >Week 2</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/node/week3.html"
+                  >Week 3</a
+                >
+                <hr />
+                <a class="dropdown-item disabled" href="/node/week4.html"
+                  >Week 4</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="container-fluid vMenu p-xs-0 px-lg-5">
+    <div class="container-fluid vMenu p-xs-0 px-lg-5">
       <div class="row no-gutters shadow-lg my-5">
         <div class="col-lg-4 mb-0 tab-container">
           <nav class="nav flex-column shadow-sm font-italic p-3">
-            <a href="#home" role="tab" data-toggle="tab" class="nav-link active mr-2 rounded-pill">
-              <img class="navImg mr-2" src="img/logo.png"> Home</a>
-        
-            <a href="#bootstrap" role="tab" data-toggle="tab" class="nav-link mr-2 rounded-pill">
-              <img class="navImg mr-2" src="img/logo-bootstrap.svg"> Bootstrap</a>
+            <a
+              href="#home"
+              role="tab"
+              data-toggle="tab"
+              class="nav-link active mr-2 rounded-pill"
+            >
+              <img class="navImg mr-2" src="img/logo.png" /> Home</a
+            >
 
-            <a href="#react" role="tab" data-toggle="tab" class="nav-link mr-2 rounded-pill disabled">
-              <img class="navImg mr-2" src="img/logo-react.svg"> React</a>
+            <a
+              href="#bootstrap"
+              role="tab"
+              data-toggle="tab"
+              class="nav-link mr-2 rounded-pill"
+            >
+              <img class="navImg mr-2" src="img/logo-bootstrap.svg" />
+              Bootstrap</a
+            >
 
-            <a href="#native" role="tab" data-toggle="tab" class="nav-link mr-2 rounded-pill disabled">
-              <img class="navImg mr-2" src="img/logo-react-native.svg"> Native</a>
+            <a
+              href="#react"
+              role="tab"
+              data-toggle="tab"
+              class="nav-link mr-2 rounded-pill disabled"
+            >
+              <img class="navImg mr-2" src="img/logo-react.svg" /> React</a
+            >
 
-            <a href="#node" role="tab" data-toggle="tab" class="nav-link mr-2 rounded-pill disabled">
-              <img class="navImg mr-2" src="img/logo-nodejs-square.svg"> Node</a>
+            <a
+              href="#native"
+              role="tab"
+              data-toggle="tab"
+              class="nav-link mr-2 rounded-pill disabled"
+            >
+              <img class="navImg mr-2" src="img/logo-react-native.svg" />
+              Native</a
+            >
+
+            <a
+              href="#node"
+              role="tab"
+              data-toggle="tab"
+              class="nav-link mr-2 rounded-pill disabled"
+            >
+              <img class="navImg mr-2" src="img/logo-nodejs-square.svg" />
+              Node</a
+            >
           </nav>
         </div>
 
         <div class="col-lg-8 p-5 md-5">
-            <div class="tab-content md-5">
-              <div role="tabpanel" class="tab-pane fade show active" id="home">
-                <h5 class="lead font-italic m-3">NuCamp Student Quiz</h5>
-                <p class="lead font-italic m-3">Made by students from the NuCamp codecamp. 
-                  <br>
-                  Feel free to test your knowledge of each weeks learning materials.</p>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="bootstrap">
-                <h5 class="lead font-italic m-3">Bootstrap Quizzes</h5>
-                <a href="/quizzes/bootstrap/week1.html" role="button" class="btn btn-primary btn-lg m-3">Week 1 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/bootstrap/week2.html" role="button" class="btn btn-primary btn-lg m-3">Week 2 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/bootstrap/week3.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 3
-                  <i class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/bootstrap/week4.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 4
-                  <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="react">
-                <h5 class="lead font-italic m-3">React Quizzes</h5>
-                <a href="/quizzes/react/week1.html" role="button" class="btn btn-primary btn-lg m-3">Week 1 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/react/week2.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 2 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/react/week3.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 3 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/react/week4.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 4 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="native">
-                <h5 class="lead font-italic m-3">Native Quizzes</h5>
-                <a href="/quizzes/native/week1.html" role="button" class="btn btn-primary btn-lg m-3">Week 1 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/native/week2.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 2 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/native/week3.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 3 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/native/week4.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 4 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="node">
-                <h5 class="lead font-italic m-3">Node Quizzes</h5>
-                <a href="/quizzes/node/week1.html" role="button" class="btn btn-primary btn-lg m-3">Week 1 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/node/week2.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 2 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/node/week3.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 3 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-                <a href="/quizzes/node/week4.html" role="button" class="btn btn-primary btn-lg m-3 disabled">Week 4 <i
-                    class="fa fa-arrow-circle-right"></i></a>
-              </div>
+          <div class="tab-content md-5">
+            <div role="tabpanel" class="tab-pane fade show active" id="home">
+              <h5 class="lead font-italic m-3">NuCamp Student Quiz</h5>
+              <p class="lead font-italic m-3">
+                Made by students from the NuCamp codecamp.
+                <br />
+                Feel free to test your knowledge of each weeks learning
+                materials.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="bootstrap">
+              <h5 class="lead font-italic m-3">Bootstrap Quizzes</h5>
+              <a
+                href="/quizzes/bootstrap/week1.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3"
+                >Week 1 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/bootstrap/week2.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3"
+                >Week 2 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/bootstrap/week3.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 3 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/bootstrap/week4.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 4 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="react">
+              <h5 class="lead font-italic m-3">React Quizzes</h5>
+              <a
+                href="/quizzes/react/week1.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3"
+                >Week 1 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/react/week2.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 2 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/react/week3.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 3 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/react/week4.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 4 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="native">
+              <h5 class="lead font-italic m-3">Native Quizzes</h5>
+              <a
+                href="/quizzes/native/week1.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3"
+                >Week 1 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/native/week2.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 2 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/native/week3.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 3 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/native/week4.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 4 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="node">
+              <h5 class="lead font-italic m-3">Node Quizzes</h5>
+              <a
+                href="/quizzes/node/week1.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3"
+                >Week 1 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/node/week2.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 2 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/node/week3.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 3 <i class="fa fa-arrow-circle-right"></i
+              ></a>
+              <a
+                href="/quizzes/node/week4.html"
+                role="button"
+                class="btn btn-primary btn-lg m-3 disabled"
+                >Week 4 <i class="fa fa-arrow-circle-right"></i
+              ></a>
             </div>
           </div>
+        </div>
       </div>
-  </div> <!-- Container Fluid-->
-
-  <!-- <script src="script.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-
-  <footer class="py-3 mt-auto">
-    <div class="container text-center">
-      <small>Developed by <a href="https://daveymason.com">Davey Mason</a></small>
     </div>
-  </footer>
+    <!-- Container Fluid-->
 
-</body>
+    <!-- <script src="script.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
 
+    <footer class="py-3 mt-auto">
+      <div class="container text-center">
+        <small
+          >Developed by <a href="https://daveymason.com">Davey Mason</a></small
+        >
+      </div>
+    </footer>
+  </body>
 </html>
