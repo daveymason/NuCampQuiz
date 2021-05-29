@@ -77,7 +77,7 @@ const quizData = [
     question: "Q10 - Which of the following statements is true?",
     a: "Let and Var have block scope",
     b: "Let and Const have block scope",
-    c: "Let and Const have block scope",
+    c: "Var and Const have block scope",
     d: "All variables have global scope",
     correct: "b",
   },
