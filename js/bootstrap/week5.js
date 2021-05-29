@@ -55,7 +55,7 @@ const quizData = [
     b: "el.addEventListener('onmouseover', makeTextWhite);",
     c: "el.addEventListener('mouseover', makeTextWhite);",
     d: "el.addEventListener('onmouseover', makeTextWhite)",
-    correct: "b",
+    correct: "c",
   },
   {
     question: "Q8 - Which of the following statements are true?",
